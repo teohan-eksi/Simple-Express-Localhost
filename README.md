@@ -1,8 +1,7 @@
 # Simple-Express-Localhost
 
-Starting app.js with 
+Start ther server with 
 
-~$ nodemon app.js
+~$ node app.js
 
-will reload the server autamatically when there is a change 
-and save you time during your development process.
+command.
