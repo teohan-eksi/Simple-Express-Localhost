@@ -1,9 +1,12 @@
 
 
 
+
+
 //simple server configuration to host resources from local system.
-let express = require('express');
-let app = express();
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 
 //get method to open index.html at port 3000.
 app.get('/', (req, res)=>{
@@ -14,4 +17,4 @@ app.get('/', (req, res)=>{
 //to serve static files such as images, css, scripts.
 app.use(express.static(__dirname));
 
-app.listen(3000);
+app.listen(port, () => console.log(`Listening on ${port}`));
